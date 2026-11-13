@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#f6ebdd"/>
+  <rect x="9" y="9" width="46" height="46" rx="8" fill="none" stroke="#8f3f2f" stroke-width="3"/>
+  <text
+    x="32"
+    y="43"
+    fill="#8f3f2f"
+    font-family="Songti SC, STSong, serif"
+    font-size="32"
+    font-weight="700"
+    text-anchor="middle"
+  >共</text>
+</svg>

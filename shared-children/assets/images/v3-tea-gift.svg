@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1152 1024" role="img" aria-labelledby="title desc">
+  <title id="title">王奶奶送茶叶</title>
+  <desc id="desc">王奶奶从老家寄来的茶叶盒里取出茶叶，递给刚结束服务的小陈。</desc>
+  <defs>
+    <linearGradient id="room" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ead7bd"/><stop offset=".55" stop-color="#bd956f"/><stop offset="1" stop-color="#765a47"/></linearGradient>
+    <radialGradient id="sun"><stop stop-color="#fff5d9" stop-opacity=".9"/><stop offset="1" stop-color="#edb76c" stop-opacity="0"/></radialGradient>
+    <linearGradient id="dress" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8b564b"/><stop offset="1" stop-color="#4d3131"/></linearGradient>
+    <filter id="grain"><feTurbulence baseFrequency=".8" numOctaves="3" seed="38" type="fractalNoise"/><feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 .1 0"/></filter>
+  </defs>
+  <rect width="1152" height="1024" fill="url(#room)"/>
+  <ellipse cx="741" cy="273" rx="480" ry="425" fill="url(#sun)"/>
+  <g opacity=".5">
+    <rect x="74" y="62" width="336" height="461" fill="#f5e5ca"/>
+    <path d="M242 62v461M74 291h336" stroke="#8f6e51" stroke-width="14"/>
+    <path d="M56 48c-12 103-14 271 4 451 45-24 52-43 50-105-3-130-17-277-31-346Z" fill="#624b3b"/>
+    <path d="M435 50c18 106 20 276 3 447-44-30-51-50-47-111 4-125 14-265 44-336Z" fill="#604939"/>
+  </g>
+  <g>
+    <path d="M327 545c-84 91-110 241-101 395l-7 84h408l-25-125c-13-163-80-294-175-354Z" fill="url(#dress)"/>
+    <ellipse cx="524" cy="401" rx="115" ry="135" fill="#d9aa82"/>
+    <path d="M407 384c-8-78 51-130 120-119 62 8 100 57 86 128-35-24-66-52-98-78-24 34-55 54-108 69Z" fill="#e0dfd6"/>
+    <path d="M408 374c-18 24-18 56-2 78 13-8 20-22 19-40Z" fill="#c69170"/>
+    <path d="M636 379c16 18 18 47 7 69-12-5-19-18-20-34Z" fill="#ad7b60"/>
+    <ellipse cx="483" cy="408" rx="6" ry="7" fill="#3b2d27"/><ellipse cx="559" cy="404" rx="6" ry="7" fill="#3b2d27"/>
+    <path d="M503 446c11 7 24 6 34-2" fill="none" stroke="#9b634f" stroke-width="6" stroke-linecap="round"/>
+    <path d="M448 451c12 43 47 57 78 21" fill="none" stroke="#ba8061" stroke-width="10" stroke-linecap="round"/>
+    <path d="M426 500c38 35 146 41 205 2l31 115c-75 52-181 54-254 4Z" fill="#d8b79b"/>
+    <path d="M384 638c-38 71-35 171-26 281h154l7-218Z" fill="#765045"/>
+    <path d="M618 638c42 68 46 173 52 281H510l-8-215Z" fill="#714c43"/>
+  </g>
+  <g>
+    <ellipse cx="781" cy="844" rx="201" ry="36" fill="#432d20" opacity=".22"/>
+    <path d="M650 629c-32 20-92 39-132 74-28 25-14 65 23 72 34 7 71-9 102-35l72-58Z" fill="#805649"/>
+    <path d="M563 739c-34 25-66 49-87 74-13 17 0 41 21 43 28 2 52-19 74-40l57-52Z" fill="#6c473d"/>
+    <path d="M503 792c-27 19-46 35-56 53-7 13 3 29 18 31 23 2 41-17 58-34l30-32Z" fill="#d2a17d"/>
+    <path d="M769 626c30 17 80 40 115 78 23 25 10 60-23 69-32 9-64-5-91-28l-63-54Z" fill="#805649"/>
+    <path d="M849 736c31 22 56 43 74 68 11 17-4 40-25 42-27 2-49-18-70-37l-47-44Z" fill="#d2a17d"/>
+    <g transform="translate(685 640) rotate(-7)">
+      <rect width="204" height="163" rx="16" fill="#8e332e"/>
+      <rect x="11" y="11" width="182" height="141" rx="10" fill="none" stroke="#deb078" stroke-width="5"/>
+      <circle cx="102" cy="82" r="42" fill="#e8c98f"/>
+      <path d="M77 100c5-39 13-57 27-57 15 0 25 20 27 57" fill="#557259"/>
+      <path d="M88 80c10-9 20-14 31-4M115 75c9 4 16 10 20 18" fill="none" stroke="#557259" stroke-width="6" stroke-linecap="round"/>
+      <path d="M25 37h31M148 132h32" stroke="#d8a469" stroke-width="3"/>
+    </g>
+  </g>
+  <g opacity=".74">
+    <path d="M965 724h31L983 968h-18Z" fill="#684832"/>
+    <path d="M893 628h174l-19 101c-42 29-103 29-137 0Z" fill="#d2b487"/>
+    <path d="M919 637c8-80 36-117 61-117 38 0 64 38 69 117" fill="#ead4b0"/>
+    <path d="M893 710c39 31 107 32 151 0l-12 46c-41 23-92 24-126 0Z" fill="#6b4a35"/>
+  </g>
+  <rect width="1152" height="1024" filter="url(#grain)" opacity=".25"/>
+</svg>

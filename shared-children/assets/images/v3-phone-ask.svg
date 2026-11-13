@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1152 1024" role="img" aria-labelledby="title desc">
+  <title id="title">王奶奶询问能否打电话</title>
+  <desc id="desc">王奶奶坐在窗边拿着手机，有些期待地询问小陈，以后有事能否直接给他打电话。</desc>
+  <defs>
+    <linearGradient id="room" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ebd8be"/><stop offset=".55" stop-color="#c6a17d"/><stop offset="1" stop-color="#8f6d52"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff5dc"/><stop offset="1" stop-color="#91a28f"/></linearGradient>
+    <radialGradient id="warm"><stop stop-color="#fff6dc" stop-opacity=".92"/><stop offset="1" stop-color="#eebc73" stop-opacity="0"/></radialGradient>
+    <filter id="grain"><feTurbulence baseFrequency=".81" numOctaves="3" seed="24" type="fractalNoise"/><feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 .1 0"/></filter>
+  </defs>
+  <rect width="1152" height="1024" fill="url(#room)"/>
+  <ellipse cx="723" cy="247" rx="460" ry="420" fill="url(#warm)"/>
+  <g>
+    <rect x="702" y="59" width="348" height="349" rx="5" fill="#775841"/>
+    <rect x="718" y="75" width="316" height="317" fill="url(#glass)"/>
+    <path d="M718 303c75-50 144-34 208-83 39-30 69-48 108-46v218H718Z" fill="#7a907c" opacity=".63"/>
+    <path d="M873 75v317M718 235h316" stroke="#fff8e8" stroke-width="10" opacity=".86"/>
+    <path d="M685 52c-15 96-17 247 2 377 37-21 42-36 39-91-2-100-9-220-19-286Z" fill="#6c4e3c" opacity=".64"/>
+    <path d="M1061 51c16 95 19 251 3 374-38-23-43-39-39-94 5-99 12-219 20-280Z" fill="#684a39" opacity=".66"/>
+  </g>
+  <g>
+    <path d="M101 716h952c31 0 55 24 55 55v25c0 30-25 55-56 55H105c-31 0-55-24-55-55v-25c0-31 24-55 55-55Z" fill="#76513a"/>
+    <path d="M126 851h905l40 112h-70l-32-64H221l-34 64H85Z" fill="#543726"/>
+  </g>
+  <g>
+    <path d="M361 567c-85 66-123 190-117 333l-8 117h399l-17-133c-7-155-75-268-170-317Z" fill="#80584b"/>
+    <ellipse cx="490" cy="433" rx="103" ry="120" fill="#d9aa82"/>
+    <path d="M387 416c-8-71 42-116 106-108 58 7 93 53 81 119-32-24-61-49-87-72-22 28-52 47-100 61Z" fill="#deddd5"/>
+    <path d="M390 406c-17 20-18 50-3 70 12-6 19-19 19-36Z" fill="#c79271"/>
+    <path d="M590 411c14 17 16 44 6 64-11-4-17-15-18-31Z" fill="#af7d61"/>
+    <ellipse cx="457" cy="438" rx="6" ry="7" fill="#3b2d27"/><ellipse cx="522" cy="434" rx="6" ry="7" fill="#3b2d27"/>
+    <path d="M475 472c10 7 22 6 31-2" fill="none" stroke="#9d6652" stroke-width="5" stroke-linecap="round"/>
+    <path d="M425 476c11 40 43 53 71 20" fill="none" stroke="#ba8062" stroke-width="9" stroke-linecap="round"/>
+    <path d="M407 517c35 31 133 37 186 2l27 108c-67 49-165 50-233 3Z" fill="#d8b89d"/>
+    <path d="M383 629c-41 59-42 157-33 249h142l8-188Z" fill="#7d574b"/>
+    <path d="M586 627c35 60 41 151 47 249H493l-8-185Z" fill="#765045"/>
+    <g transform="translate(504 664) rotate(7)">
+      <rect width="79" height="139" rx="13" fill="#30383b"/>
+      <rect x="7" y="14" width="65" height="108" rx="5" fill="#c9d1c9"/>
+      <circle cx="39.5" cy="129" r="5" fill="#6d7779"/>
+      <circle cx="27" cy="76" r="10" fill="#7d8e80"/>
+      <path d="M18 103c4-16 15-19 24-4M47 103c4-16 16-19 25-4" fill="none" stroke="#7d8e80" stroke-width="4"/>
+    </g>
+    <path d="M414 665c-3 35-30 55-65 63M570 665c17 20 45 19 67 3" fill="none" stroke="#d6ad90" stroke-width="11" stroke-linecap="round"/>
+  </g>
+  <g opacity=".75">
+    <path d="M849 803v-197" stroke="#66503b" stroke-width="10"/>
+    <path d="M848 660c-39-20-66-49-81-86M850 698c37-18 61-47 74-81" fill="none" stroke="#73836d" stroke-width="8" stroke-linecap="round"/>
+    <ellipse cx="754" cy="559" rx="42" ry="23" fill="#829378" transform="rotate(-30 754 559)"/>
+    <ellipse cx="928" cy="604" rx="40" ry="22" fill="#788a70" transform="rotate(31 928 604)"/>
+    <path d="M799 806h105l-13 94h-78Z" fill="#b89270"/>
+  </g>
+  <rect width="1152" height="1024" filter="url(#grain)" opacity=".25"/>
+</svg>

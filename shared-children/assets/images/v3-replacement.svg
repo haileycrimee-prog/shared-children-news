@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1152 1024" role="img" aria-labelledby="title desc">
+  <title id="title">服务人员更换</title>
+  <desc id="desc">小陈把服务交给小李，王奶奶站在门内，面对再次更换的服务人员显得迟疑。</desc>
+  <defs>
+    <linearGradient id="door" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7b614d"/><stop offset="1" stop-color="#413128"/></linearGradient>
+    <linearGradient id="room" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ecd9bd"/><stop offset="1" stop-color="#b88f6a"/></linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#617588"/><stop offset="1" stop-color="#354653"/></linearGradient>
+    <filter id="grain"><feTurbulence baseFrequency=".77" numOctaves="3" seed="42" type="fractalNoise"/><feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 .1 0"/></filter>
+  </defs>
+  <rect width="1152" height="1024" fill="url(#door)"/>
+  <path d="M319 31h776v961H319Z" fill="#3c2c24"/>
+  <path d="M361 69h689v885H361Z" fill="url(#room)"/>
+  <ellipse cx="774" cy="299" rx="395" ry="373" fill="#fff1d1" opacity=".45"/>
+  <g opacity=".8">
+    <rect x="759" y="91" width="210" height="344" fill="#f5e5ca" opacity=".82"/>
+    <path d="M864 91v344M759 264h210" stroke="#9a7454" stroke-width="12" opacity=".55"/>
+    <path d="M421 720h432c25 0 45 20 45 45v50H399v-56c0-22 15-39 22-39Z" fill="#785139"/>
+  </g>
+  <g>
+    <path d="M537 509c-65 85-76 214-74 365l-13 117h337l-17-130c-8-151-57-277-142-352Z" fill="#6a5044"/>
+    <ellipse cx="649" cy="397" rx="89" ry="105" fill="#d5a983"/>
+    <path d="M557 382c-6-62 37-100 93-92 51 7 81 48 69 105-29-21-55-43-79-67-19 27-44 43-83 54Z" fill="#3d302b"/>
+    <ellipse cx="621" cy="397" rx="5" ry="6" fill="#3b2c27"/><ellipse cx="679" cy="394" rx="5" ry="6" fill="#3b2c27"/>
+    <path d="M640 423c8 5 18 4 25-2" fill="none" stroke="#98614d" stroke-width="4" stroke-linecap="round"/>
+    <path d="M605 428c8 28 30 38 50 15" fill="none" stroke="#b77e60" stroke-width="7" stroke-linecap="round"/>
+    <path d="M573 461c28 27 112 31 146 1l22 100c-59 38-138 39-194 0Z" fill="#d3b397"/>
+    <path d="M535 576c-20 78-15 180-8 286h118l4-209Z" fill="#61483e"/>
+    <g transform="translate(530 443) rotate(-18)">
+      <path d="M0 0h112v178H0Z" fill="#d0aa77"/>
+      <path d="M20 20h72v135H20Z" fill="#f2e3ca"/>
+      <path d="M40 55h31M40 76h42M40 97h26" stroke="#9a7758" stroke-width="5"/>
+    </g>
+  </g>
+  <g>
+    <path d="M860 512c-66 76-75 203-61 346l14 133h265l-18-147c-7-145-65-262-145-332Z" fill="url(#blue)"/>
+    <ellipse cx="938" cy="403" rx="80" ry="95" fill="#d8ad87"/>
+    <path d="M857 387c-5-54 36-91 83-81 38 9 59 40 49 88-26-16-49-34-69-49-16 20-36 32-63 42Z" fill="#3d302b"/>
+    <ellipse cx="916" cy="405" rx="4" ry="5" fill="#3c2d27"/><ellipse cx="954" cy="402" rx="4" ry="5" fill="#3c2d27"/>
+    <path d="M925 431c7 4 14 4 19-1" fill="none" stroke="#9b6651" stroke-width="4" stroke-linecap="round"/>
+    <path d="M892 435c8 27 29 38 48 16" fill="none" stroke="#b77f61" stroke-width="7" stroke-linecap="round"/>
+    <path d="M870 463c24 25 92 28 124 1l19 93c-50 33-117 34-164 0Z" fill="#d5b598"/>
+    <path d="M836 592c-20 67-16 150-12 249h118l-1-182Z" fill="#3e505a"/>
+    <path d="M834 590c-38 27-57 87-77 143-7 20 8 35 27 29 36-11 57-63 81-113Z" fill="#40525e"/>
+  </g>
+  <g>
+    <path d="M191 493c-58 69-68 186-56 314l8 165h278l-15-174c-7-136-67-253-150-309Z" fill="#77564a"/>
+    <ellipse cx="328" cy="404" rx="90" ry="108" fill="#d8aa82"/>
+    <path d="M236 391c-6-65 37-107 100-99 53 7 84 49 72 109-29-21-55-44-80-67-20 28-47 45-92 57Z" fill="#deddd5"/>
+    <path d="M239 380c-16 20-17 49-3 69 12-6 19-19 19-35Z" fill="#c69271"/>
+    <ellipse cx="296" cy="405" rx="5" ry="6" fill="#3b2c27"/><ellipse cx="357" cy="402" rx="5" ry="6" fill="#3b2c27"/>
+    <path d="M314 435c9 6 19 5 27-2" fill="none" stroke="#98614d" stroke-width="5" stroke-linecap="round"/>
+    <path d="M269 440c9 34 36 45 61 18" fill="none" stroke="#b77e60" stroke-width="8" stroke-linecap="round"/>
+    <path d="M245 477c29 29 111 34 158 2l22 96c-59 41-140 42-199 2Z" fill="#d6b69a"/>
+    <path d="M201 600c-28 64-23 151-16 253h126l8-188Z" fill="#6f5046"/>
+  </g>
+  <path d="M692 880c43-27 83-27 124 0" fill="none" stroke="#c9b79c" stroke-width="5" stroke-dasharray="10 10"/>
+  <path d="m803 869 20 11-19 13" fill="none" stroke="#9d886d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect width="1152" height="1024" filter="url(#grain)" opacity=".25"/>
+</svg>

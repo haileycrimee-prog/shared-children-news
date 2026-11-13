@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="《共享儿女：当陪伴成为一项服务》融合新闻 H5。"
+    />
+    <meta name="theme-color" content="#f6ebdd" />
+    <title>共享儿女：当陪伴成为一项服务</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./style.css" />
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?acb6e94b0738a0dd9694bc4b165a8280";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳到正文</a>
+
+    <header class="site-header" id="site-header">
+      <div class="site-header__inner">
+        <a class="site-brand" href="#section-01" aria-label="返回专题开头">
+          <span class="site-brand__seal" aria-hidden="true">共</span>
+          <span class="site-brand__copy">
+            <strong>共享儿女</strong>
+            <span>当陪伴成为一项服务</span>
+          </span>
+        </a>
+
+        <nav class="section-nav" aria-label="专题章节">
+          <a class="section-nav__link" href="#section-01" data-section-link="section-01">
+            <span class="section-nav__number">01</span>
+            <span class="section-nav__label">现象</span>
+          </a>
+          <a class="section-nav__link" href="#section-02" data-section-link="section-02">
+            <span class="section-nav__number">02</span>
+            <span class="section-nav__label">视角</span>
+          </a>
+          <a class="section-nav__link" href="#section-03" data-section-link="section-03">
+            <span class="section-nav__number">03</span>
+            <span class="section-nav__label">回应</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="story-main">
+      <div id="news-app" class="chapter-viewport"></div>
+    </main>
+
+    <p class="sr-only" id="page-status" aria-live="polite" aria-atomic="true"></p>
+
+    <noscript>
+      <div class="noscript-message">
+        本页面需要启用 JavaScript 才能展示章节内容和人物切换功能。
+      </div>
+    </noscript>
+
+    <script src="./assets/vendor/scrollama.min.js"></script>
+    <script src="./content.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

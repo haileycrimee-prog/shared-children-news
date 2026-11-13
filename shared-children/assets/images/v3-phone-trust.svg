@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1152 1024" role="img" aria-labelledby="title desc">
+  <title id="title">随时可以打电话</title>
+  <desc id="desc">小陈答应王奶奶可以随时来电，王奶奶放下手机，神情明显安心下来。</desc>
+  <defs>
+    <linearGradient id="back" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f3e0c5"/><stop offset=".5" stop-color="#d0ad84"/><stop offset="1" stop-color="#9b7456"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#fff9e9" stop-opacity=".95"/><stop offset="1" stop-color="#efbd74" stop-opacity="0"/></radialGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#61746c"/><stop offset="1" stop-color="#3c504b"/></linearGradient>
+    <filter id="grain"><feTurbulence baseFrequency=".78" numOctaves="3" seed="28" type="fractalNoise"/><feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 .1 0"/></filter>
+  </defs>
+  <rect width="1152" height="1024" fill="url(#back)"/>
+  <ellipse cx="634" cy="289" rx="520" ry="449" fill="url(#glow)"/>
+  <g opacity=".55">
+    <rect x="87" y="70" width="308" height="374" fill="#775943"/>
+    <rect x="103" y="86" width="276" height="342" fill="#f6e6c8"/>
+    <path d="M241 86v342M103 257h276" stroke="#987252" stroke-width="10"/>
+    <path d="M64 58c-16 104-17 267 4 405 39-23 43-40 40-99-3-107-16-239-27-306Z" fill="#6e503d" opacity=".6"/>
+  </g>
+  <g>
+    <path d="M452 516c-96 76-139 204-147 365l-15 143h408l-22-160c-8-166-70-287-160-348Z" fill="url(#shirt)"/>
+    <ellipse cx="554" cy="373" rx="101" ry="119" fill="#d6aa84"/>
+    <path d="M451 354c-8-70 40-116 106-108 57 7 91 52 79 117-29-22-56-46-81-71-23 29-53 49-104 62Z" fill="#3d302b"/>
+    <ellipse cx="522" cy="376" rx="5" ry="6" fill="#3b2d27"/><ellipse cx="585" cy="372" rx="5" ry="6" fill="#3b2d27"/>
+    <path d="M540 405c9 7 21 6 30-2" fill="none" stroke="#9c6550" stroke-width="5" stroke-linecap="round"/>
+    <path d="M493 409c10 37 40 49 66 19" fill="none" stroke="#b77f61" stroke-width="8" stroke-linecap="round"/>
+    <path d="M477 447c25 31 139 36 171 1l22 110c-69 40-151 41-212 2Z" fill="#d7b498"/>
+  </g>
+  <g>
+    <path d="M827 511c-67 76-77 202-63 348l15 162h254l-18-170c-7-147-67-267-150-330Z" fill="#81594c"/>
+    <ellipse cx="925" cy="405" rx="89" ry="104" fill="#d9aa82"/>
+    <path d="M835 391c-6-62 37-101 92-93 51 7 80 48 68 106-28-21-54-43-77-66-18 26-43 43-83 53Z" fill="#deddd6"/>
+    <path d="M838 382c-14 18-15 45-2 64 11-6 17-18 16-33Z" fill="#c59170"/>
+    <ellipse cx="897" cy="406" rx="5" ry="6" fill="#3c2d27"/><ellipse cx="954" cy="403" rx="5" ry="6" fill="#3c2d27"/>
+    <path d="M915 437c9 6 19 5 27-2" fill="none" stroke="#96614d" stroke-width="5" stroke-linecap="round"/>
+    <path d="M875 442c9 33 36 44 61 17" fill="none" stroke="#b77e60" stroke-width="8" stroke-linecap="round"/>
+    <path d="M847 481c30 29 111 34 158 2l21 95c-59 41-139 42-198 2Z" fill="#d6b69b"/>
+    <path d="M797 621c25 51 25 131 30 220h109l-6-169Z" fill="#69483f"/>
+  </g>
+  <g>
+    <ellipse cx="620" cy="808" rx="137" ry="30" fill="#4b3323" opacity=".2"/>
+    <path d="M485 718h265c21 0 38 17 38 38v21c0 20-16 36-36 36H483c-19 0-34-15-34-34v-25c0-20 16-36 36-36Z" fill="#7b543b"/>
+    <rect x="548" y="680" width="75" height="133" rx="13" fill="#30383b" transform="rotate(-8 585 746)"/>
+    <rect x="555" y="694" width="61" height="102" rx="4" fill="#d0d6cd" transform="rotate(-8 585 746)"/>
+    <circle cx="591" cy="811" r="5" fill="#717b7b"/>
+    <path d="M670 745h54l-8 43c-8 17-31 17-38 0Z" fill="#f7efdf"/>
+    <path d="M720 755c36-4 39 31 1 30" fill="none" stroke="#f7efdf" stroke-width="9"/>
+  </g>
+  <g opacity=".76">
+    <path d="M108 816h105l-13 105H122Z" fill="#b18d6a"/>
+    <path d="M160 819V613" stroke="#66503a" stroke-width="9"/>
+    <path d="M159 671c-38-16-58-40-70-73M162 701c40-14 63-38 78-67" fill="none" stroke="#73846e" stroke-width="8" stroke-linecap="round"/>
+    <ellipse cx="82" cy="590" rx="42" ry="22" fill="#829278" transform="rotate(-33 82 590)"/>
+    <ellipse cx="248" cy="625" rx="39" ry="21" fill="#75876d" transform="rotate(30 248 625)"/>
+  </g>
+  <rect width="1152" height="1024" filter="url(#grain)" opacity=".25"/>
+</svg>
