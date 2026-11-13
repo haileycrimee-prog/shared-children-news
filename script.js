@@ -206,7 +206,7 @@
           <video
             playsinline
             webkit-playsinline
-            preload="auto"
+            preload="metadata"
             data-video-element
             data-video-src="${safeUrl(video.src)}"
             aria-label="${alt}"
@@ -1599,7 +1599,6 @@
     const { signal } = abortController;
     let isSeeking = false;
     let isReady = false;
-    let objectUrl = null;
 
     const listen = (target, eventName, handler, options = {}) => {
       target?.addEventListener(eventName, handler, { ...options, signal });
@@ -1736,26 +1735,11 @@
     listen(seek, "pointerup", finishSeeking);
     listen(seek, "pointercancel", finishSeeking);
 
-    const loadVideo = async () => {
+    const loadVideo = () => {
       if (!videoSource) return;
       player.classList.add("is-loading");
-
-      try {
-        const response = await fetch(videoSource, { signal });
-        if (!response.ok) {
-          throw new Error(`视频加载失败：${response.status}`);
-        }
-        const blob = await response.blob();
-        if (signal.aborted) return;
-        objectUrl = URL.createObjectURL(blob);
-        video.src = objectUrl;
-        video.load();
-      } catch (error) {
-        if (signal.aborted) return;
-        console.error(error);
-        video.src = videoSource;
-        video.load();
-      }
+      video.src = videoSource;
+      video.load();
     };
 
     syncPlaybackState();
@@ -1767,10 +1751,6 @@
       destroy() {
         abortController.abort();
         video.pause();
-        if (objectUrl) {
-          URL.revokeObjectURL(objectUrl);
-          objectUrl = null;
-        }
       },
       pause() {
         video.pause();
