@@ -2,7 +2,7 @@
 
 const GAME_CONFIG = Object.freeze({
   // 游戏完成后返回完整新闻专题首页。
-  NEWS_URL: "https://haileycrimee-prog.github.io/shared-children-news/",
+  NEWS_URL: "https://haileycrimee-prog.github.io/shared-children-news/#section-03",
 });
 
 const INITIAL_STATE = Object.freeze({
