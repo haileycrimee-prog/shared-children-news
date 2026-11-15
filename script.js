@@ -872,15 +872,12 @@
                     <article
                       class="person-card${index === 0 ? " is-current" : ""}"
                       data-person-card-index="${index}"
-                      aria-labelledby="person-${escapeHTML(person.id)}-card-${index + 1}"
+                      aria-label="${escapeHTML(`${card.marker}，${card.navLabel}`)}"
                     >
                       <header class="person-card__header">
                         <span>${escapeHTML(card.marker)}</span>
                         <span>${escapeHTML(card.navLabel)}</span>
                       </header>
-                      <h4 id="person-${escapeHTML(person.id)}-card-${index + 1}">
-                        ${escapeHTML(card.title)}
-                      </h4>
                       ${paragraphs(card.body)}
                     </article>
                   `,

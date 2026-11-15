@@ -4128,7 +4128,7 @@ html.js .profile-step.is-visible {
 
 .person-card__header {
   display: flex;
-  margin-bottom: 8px;
+  margin-bottom: 0;
   align-items: center;
   gap: 8px;
   color: var(--person-accent);
@@ -4146,13 +4146,6 @@ html.js .profile-step.is-visible {
   background: var(--person-accent-soft);
   color: var(--person-deep);
   font-variant-numeric: tabular-nums;
-}
-
-.person-card h4 {
-  margin: 0;
-  font-family: var(--serif);
-  font-size: clamp(20px, 2.5vw, 28px);
-  line-height: 1.38;
 }
 
 .person-card p {
@@ -4608,10 +4601,6 @@ html.js .profile-step.is-visible {
   .person-card {
     padding: 16px 15px;
     border-radius: 15px;
-  }
-
-  .person-card h4 {
-    font-size: 21px;
   }
 
   .person-card p {
