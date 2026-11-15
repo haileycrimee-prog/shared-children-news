@@ -4835,6 +4835,94 @@ html.js .profile-step.is-visible {
   }
 }
 
+/* Desktop landscape keeps the profile fixed while the reading cards scroll independently. */
+@media (min-width: 861px) and (orientation: landscape) {
+  .section-two .perspective-heading,
+  .perspective-reader {
+    width: min(100%, 1080px);
+  }
+
+  .person-deck {
+    grid-template-rows: minmax(0, 1fr) 72px;
+  }
+
+  .person-view {
+    grid-template-columns: clamp(300px, 30%, 360px) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr);
+  }
+
+  .person-bar {
+    min-width: 0;
+    min-height: 0;
+    padding: 22px 22px 18px;
+    overflow-y: auto;
+    align-content: start;
+    border-right: 1px solid rgba(112, 78, 47, 0.16);
+    border-bottom: 0;
+    box-shadow: 12px 0 26px rgba(72, 48, 28, 0.06);
+    scrollbar-width: none;
+  }
+
+  .person-deck--blue .person-bar {
+    border-right-color: rgba(47, 83, 110, 0.16);
+    box-shadow: 12px 0 26px rgba(47, 83, 110, 0.06);
+  }
+
+  .person-bar::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  .person-bar__identity {
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .person-bar__title-line {
+    position: relative;
+    display: block;
+    padding-right: 30px;
+  }
+
+  .person-bar h3 {
+    font-size: clamp(19px, 1.58vw, 22px);
+    white-space: nowrap;
+  }
+
+  .person-bar__ordinal {
+    position: absolute;
+    top: 3px;
+    right: 0;
+  }
+
+  .person-bar__quote {
+    -webkit-line-clamp: 4;
+  }
+
+  .person-bar__tools {
+    margin-top: 12px;
+  }
+
+  .person-card-progress {
+    margin-top: 13px;
+  }
+
+  .person-cards {
+    padding: 18px clamp(20px, 2.4vw, 30px) 24px;
+  }
+
+  .person-cards__track {
+    width: 100%;
+    max-width: 760px;
+  }
+
+  .person-pull {
+    min-height: 72px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
