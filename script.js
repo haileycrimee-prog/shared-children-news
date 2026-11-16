@@ -442,7 +442,7 @@
 
     return `
       <section
-        class="story-section section-one is-cover-mode"
+        class="story-section section-one"
         id="${escapeHTML(section.id)}"
         data-section-number="${escapeHTML(section.number)}"
         aria-labelledby="${escapeHTML(section.id)}-title"
@@ -453,17 +453,6 @@
             <p class="hero__title">${escapeHTML(hero.title)}</p>
             <h1>${escapeHTML(hero.subtitle)}</h1>
             <p class="hero__lead">${escapeHTML(hero.lead)}</p>
-            <div class="section-one__enter-wrap">
-              <button
-                class="button button--primary section-one__enter"
-                type="button"
-                data-enter-story
-                aria-controls="${escapeHTML(section.id)}-body"
-              >
-                <span>${escapeHTML(hero.entryLabel)}</span>
-                <span aria-hidden="true">→</span>
-              </button>
-            </div>
           </div>
           <div class="section-one__hero-cover">
             ${renderMedia(hero.cover, hero.title)}
@@ -1550,32 +1539,6 @@
     });
   }
 
-  function setSectionOneCoverMode(panel, isLocked) {
-    if (!panel?.classList.contains("section-one")) return;
-
-    const body = panel.querySelector(".section-one__body");
-    panel.classList.toggle("is-cover-mode", isLocked);
-    if (body) {
-      body.inert = isLocked;
-      if (isLocked) {
-        body.setAttribute("aria-hidden", "true");
-      } else {
-        body.removeAttribute("aria-hidden");
-      }
-    }
-
-    if (isLocked) {
-      sectionOneVideoController?.pause();
-      mediaScroller?.destroy();
-      progressScroller?.destroy();
-      sectionOneRevealObserver?.disconnect();
-      mediaScroller = null;
-      progressScroller = null;
-      sectionOneRevealObserver = null;
-      panel.scrollTop = 0;
-    }
-  }
-
   function initSectionOneVideo(panel) {
     const player = panel?.querySelector("[data-video-player]");
     const video = player?.querySelector("[data-video-element]");
@@ -1755,23 +1718,6 @@
     };
   }
 
-  function enterSectionOneStory(button) {
-    const panel = button.closest("#section-01");
-    if (!panel) return;
-
-    setSectionOneCoverMode(panel, false);
-    panel.scrollTop = 0;
-    initSectionScrollytelling(panel);
-    initSectionOneVideo(panel);
-
-    const headingGroup = panel.querySelector(".section-heading");
-    const heading = headingGroup?.querySelector("h2");
-    window.requestAnimationFrame(() => {
-      scrollToTarget(headingGroup, heading);
-    });
-    setPageStatus("已进入第一章正文。");
-  }
-
   /**
    * 章节之间使用显式切换，而不是连续页面滚动。
    * 未激活的 Section 同时设置 hidden，确保鼠标、触屏和键盘都无法滚动穿越边界。
@@ -1800,7 +1746,6 @@
     activeSectionPanel = nextSection;
     nextSection.scrollTop = 0;
     setActiveSection(sectionId);
-    setSectionOneCoverMode(nextSection, sectionId === "section-01");
 
     if (sectionId === "section-02") {
       resetPerspectiveStage(nextSection);
@@ -1811,22 +1756,19 @@
     }
 
     updateChapterViewportHeight();
-    if (!nextSection.classList.contains("is-cover-mode")) {
-      initSectionScrollytelling(nextSection);
+    initSectionScrollytelling(nextSection);
+    if (sectionId === "section-01") {
+      initSectionOneVideo(nextSection);
     }
 
     if (focus) {
-      const focusTarget = nextSection.classList.contains("is-cover-mode")
-        ? nextSection.querySelector("[data-enter-story]")
-        : nextSection.querySelector(".section-heading h2, .game-entry h2");
+      const focusTarget = nextSection.querySelector(
+        ".section-heading h2, .game-entry h2",
+      );
       focusTarget?.focus({ preventScroll: true });
     }
 
-    setPageStatus(
-      nextSection.classList.contains("is-cover-mode")
-        ? "专题封面已加载，点击进入正文。"
-        : `已进入章节 ${nextSection.dataset.sectionNumber || ""}。`,
-    );
+    setPageStatus(`已进入章节 ${nextSection.dataset.sectionNumber || ""}。`);
   }
 
   function updatePerspectiveTabs() {
@@ -2692,12 +2634,6 @@
       if (sectionIds.includes(sectionId)) {
         activateSection(sectionId);
       }
-      return;
-    }
-
-    const enterButton = event.target.closest("[data-enter-story]");
-    if (enterButton) {
-      enterSectionOneStory(enterButton);
       return;
     }
 
